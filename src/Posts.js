@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 const Posts = () => {
   useEffect(() => {
     getPosts();
-  });
+  }, []);
 
-  const [posts, setPosts] = React.useState();
+  const [posts, setPosts] = React.useState([]);
 
   const getPosts = () => {
     axios
